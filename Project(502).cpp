@@ -57,24 +57,7 @@ void showLeaderboard();
 // Add a winner to highscores.txt (sorted, top 10 only)
 void saveWinner(string winnerName, int winnerScore);
 
-//COMMON 
 
-// Read a number between low and high (ask again if wrong)
-int readChoice(int low, int high);
-// Show the rules of the game
-void showInstructions();
-// Read the names and colours of both players
-void setupPlayers(string names[], int colors[], bool isComputer[], bool vsComputer);
-// Show the round number, totals and card counts
-void showScoreboard(string names[], int colors[], int totals[], int handSize[], int roundNumber, int currentPlayer);
-// Show the draw pile count, top card and waiting effects
-void showTopCard(int topCard, int deckSize, int pendingDraw, bool pendingSkip, int demandSuit);
-// Print the hand side by side (green = can play, grey = cannot)
-void printHand(int hand[], int handSize, bool legal[]);
-// Read highscores.txt and show the top 10
-void showLeaderboard();
-// Add a winner to highscores.txt (sorted, top 10 only)
-void saveWinner(string winnerName, int winnerScore);
 
 int main()
 {
