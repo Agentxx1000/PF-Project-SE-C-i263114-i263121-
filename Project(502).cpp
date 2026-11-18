@@ -59,8 +59,7 @@ void saveWinner(string winnerName, int winnerScore);
 
 //COMMON 
 
-// Read a number between low and high (ask
-again if wrong)
+// Read a number between low and high (ask again if wrong)
 int readChoice(int low, int high);
 // Show the rules of the game
 void showInstructions();
