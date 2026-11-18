@@ -57,7 +57,16 @@ void showLeaderboard();
 // Add a winner to highscores.txt (sorted, top 10 only)
 void saveWinner(string winnerName, int winnerScore);
 
+//COMMON 
 
+// Change the text and background colour of the console
+void setColor(int textColor, int bgColor);
+// Clear the console screen
+void clearScreen();
+// Return the suit: 0 = Spades, 1 = Hearts, 2 = Diamonds, 3 = Clubs
+int getSuit(int card);
+// Return the value of a card: 0 = Ace, 1 = Two ... 12 = King
+int getValue(int card);
 
 int main()
 {
