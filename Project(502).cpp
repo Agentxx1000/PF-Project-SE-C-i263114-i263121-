@@ -1,4 +1,8 @@
 #include<iostream>
+#include<iomanip>
+#include<string>
+#include<fstream>
+#include<windows.h>
 using namespace std;
 
 const int PLAYERS = 2; // the game always has 2 players
@@ -23,13 +27,11 @@ void createDeck(int deck[], int &deckSize);
 // Mix the cards into a random order
 void shuffleDeck(int deck[], int deckSize);
 // Take the top card; refill from the discard pile if empty
-int drawCard(int deck[], int &deckSize, int
-discardPile[], int &discardSize);
+int drawCard(int deck[], int &deckSize, int discardPile[], int &discardSize);
 // Return true if the card can be played now
 bool isLegalCard(int card, int topCard, int demandSuit, int pendingDraw, bool pendingSkip);
 // Update the waiting effects after a card is played
-void applyCardEffect(int card, int chosenSuit,
-int &pendingDraw, bool &pendingSkip, int &demandSuit);
+void applyCardEffect(int card, int chosenSuit, int &pendingDraw, bool &pendingSkip, int &demandSuit);
 // Return the penalty points of one card
 int getCardPoints(int card);
 // Pick a legal card (7♥ first, then the most points); return its position, or 0 to draw
@@ -73,3 +75,8 @@ int main()
 	
 	return 0;
 }
+
+//Student 1
+
+
+//Student 2

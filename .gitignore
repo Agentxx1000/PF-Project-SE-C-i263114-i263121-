@@ -1,0 +1,34 @@
+# Compiled executables
+*.exe
+*.out
+*.o
+*.obj
+
+# Text files (if generated)
+*.txt
+
+# IDE files
+*.dev
+*.layout
+
+# Debug/build folders
+Debug/
+Release/
+build/
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
