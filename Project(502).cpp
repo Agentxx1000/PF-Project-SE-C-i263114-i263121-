@@ -78,5 +78,19 @@ int main()
 
 //Student 1
 
+int drawCard(int deck[], int &deckSize, int discardPile[], int &discardSize)
+{
+	if(deckSize<1)
+	{
+		int init_discard_size=discardSize
+		for(int i=0; i<init_discard_size; discardSize--,deckSize++, i++)
+		{
+			deck[i]=discardPile[init_discard_size-i];
+			discardPile[init_discard_size-i] = 0;
+		}
+	}
+	
+	return deck[deckSize-1];
+}
 
 //Student 2
